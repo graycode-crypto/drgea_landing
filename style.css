@@ -433,3 +433,103 @@ footer{
         width: 350px;
     }
 }
+
+/*Responsive para Tablet*/
+
+@media only screen and (max-width: 1000px) {
+    #atf #header #logo img {
+        width: 200px;
+    }
+    #atf {
+        background-position: center;
+    }
+    #atf #bienestar h2 {
+        font-size: 100px;
+        letter-spacing: 15px;
+        margin-top: -180px;
+    }
+    #atf #bienestar h3 {
+        margin-top: 80px;
+        font-size: 120px;
+        letter-spacing: 20px;
+    }
+    #atf #usp h1 {
+        font-size: 17px;
+        padding-top: 120px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        letter-spacing: 4px;
+    }
+    #header_cta {
+        bottom: 25%;
+        top: auto;
+        right: 0px;
+        left: 0px;
+        display: flex;
+        justify-content: center;
+        z-index: 99;
+    }
+    .cta{
+        font-size: 17px;
+        padding: 25px 40px;
+    }
+    #bienvenido {
+        flex-direction: column;
+    }
+    #bienvenido #bienvenido_1 #drgea {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    #bienvenido #bienvenido_1 #bienvenido_content p {
+        text-align: center;
+    }
+    #bienvenido #bienvenido_1 #bienvenido_cta {
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    #bienvenido #bienvenido_2 {
+        min-height: 300px;
+        position: relative;
+    }
+    #bienvenido #bienvenido_2 #bienvenido_planta {
+        display: block;
+    }
+    #bienvenido #bienvenido_2 #bienvenido_planta img {
+        position: absolute;
+        bottom: 300px;
+        left: -200px;
+        margin: auto;
+    }
+    #formulario {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+    #formulario #form {
+        margin-top: 0px;
+    }
+    #formulario #form_arbol_2 {
+        position: absolute;
+        bottom: -100px;
+        left: 0px;
+    }
+    #historia {
+        flex-direction: column;
+    }
+    #historia #historia_2 {
+        margin-top: 40px;
+        padding: 0px;
+    }
+    #historia #historia_2 #historia_content {
+        margin: 0px;
+    }
+}
