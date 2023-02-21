@@ -77,11 +77,11 @@
                 <p>Nos contactaremos a la brevedad</p>
             </div>
             <div id="form_main">
-                <form method="post">
-                    <input type="text" id="f_name" placeholder="Nombre">
-                    <input type="text" id="f_phone" placeholder="Teléfono">
-                    <input type="text" id="f_email" placeholder="Email">
-                    <input type="text" id="f_comment" placeholder="Comentario">
+                <form method="post" action="save/post.php">
+                    <input type="text" id="f_name" placeholder="Nombre" name="nombre">
+                    <input type="text" id="f_phone" placeholder="Teléfono" name="telefono">
+                    <input type="text" id="f_email" placeholder="Email" name="email">
+                    <input type="text" id="f_comment" placeholder="Comentario" name="comentario">
                     <input type="submit" value="Enviar">
                 </form>
             </div>
