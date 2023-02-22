@@ -258,6 +258,24 @@ body{
     max-width: 600px;
 }
 
+#formulario #form #form_main form #dropdown {
+    background-color: #ffffff00;
+    height: 40px;
+    color: var(--soft_orange);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    border: 0px;
+    border-bottom: var(--soft_orange) solid 1px;
+    padding-left: 04px;
+}
+
+#formulario #form #form_main form #dropdown:focus {
+    outline: none;
+}
+
 #formulario #form #form_main form input[type=text]{
     background-color: transparent;
     border: none;
@@ -500,9 +518,10 @@ footer{
         display: block;
     }
     #bienvenido #bienvenido_2 #bienvenido_planta img {
+        width: 75vw;
         position: absolute;
         bottom: 300px;
-        left: -200px;
+        left: -100px;
         margin: auto;
     }
     #formulario {
@@ -511,7 +530,7 @@ footer{
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 100vh;
+        height: 110vh;
         position: relative;
     }
     #formulario #form {
@@ -562,7 +581,7 @@ footer{
     }
     #atf #arbol img {
         width: auto;
-        height: 80vh;
+        height: 60vh;
     }
     #atf #flecha img {
         width: 15px;
@@ -582,6 +601,13 @@ footer{
         margin: 0px 0px 0px 0px;
         padding: 0px 40px;
     }
+    #formulario #form #form_content h2{
+        font-size: 35px;
+    }
+    #formulario #form #form_main form input[type=submit] {
+        font-size: 15px;
+        padding: 18px 35px;
+    }
     #formulario #form_arbol_2 {
         position: absolute;
         bottom: -200px;
@@ -589,7 +615,7 @@ footer{
     }
     #formulario #form_arbol_2 img {
         width: auto;
-        height: 60vh;
+        height: 50vh;
     }
     #form_main {
         padding: 0px 40px;
