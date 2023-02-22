@@ -155,6 +155,12 @@ body{
 #bienvenido #bienvenido_1 #drgea{
     display: block;
     margin: 150px 0px 30px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#bienvenido #bienvenido_1 #drgea img {
+    width: 14vw;
 }
 
 #bienvenido #bienvenido_1 #drgea span{
@@ -197,6 +203,7 @@ body{
     background-image: url('img/bienvenido_2_bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     flex-basis: 50%;
 }
 
@@ -495,12 +502,20 @@ footer{
     #bienvenido {
         flex-direction: column;
     }
-    #bienvenido #bienvenido_1 #drgea {
-        margin-left: 0px;
+    #bienvenido #bienvenido_1 #drgea{
+        display: block;
+        margin: 70px 0px 50px 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
+    }
+    #bienvenido #bienvenido_1 #drgea span {
+        font-size: 20px;
+    }
+    #bienvenido #bienvenido_1 #drgea img {
+        width: 55vw;
+        margin: auto;
     }
     #bienvenido #bienvenido_1 #bienvenido_content p {
         text-align: center;
@@ -511,7 +526,7 @@ footer{
         justify-content: center;
     }
     #bienvenido #bienvenido_2 {
-        min-height: 300px;
+        min-height: 80vh;
         position: relative;
     }
     #bienvenido #bienvenido_2 #bienvenido_planta {
@@ -520,7 +535,7 @@ footer{
     #bienvenido #bienvenido_2 #bienvenido_planta img {
         width: 75vw;
         position: absolute;
-        bottom: 300px;
+        bottom: 80vh;
         left: -100px;
         margin: auto;
     }
