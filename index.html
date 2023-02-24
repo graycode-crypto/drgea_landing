@@ -25,6 +25,10 @@
             <h1>La salud es holística y la naturaleza puede ayudarnos a recuperar el</h1>
         </div>
 
+        <div id="arbol">
+            <img src="img/atf_arbol.png" alt="bienestar">
+        </div>
+
         <div id="bienestar">
             <h3>bienestar</h3>
             <h2>bienestar</h2>
@@ -34,9 +38,7 @@
             <a href="#formulario" class="cta">Hablar con un médico</a>
         </div>
 
-        <div id="arbol">
-            <img src="img/atf_arbol.png" alt="bienestar">
-        </div>
+        
     </div>
 
     <div id="bienvenido">
@@ -46,7 +48,7 @@
             </div> -->
 
             <div id="drgea">
-                <span>bienvenido a</span>
+                <span>bienvenidos a</span>
                 <!-- <h2>DRGEA</h2> -->
                 <img src="img/dr-gea-new-img.png" alt="Dr.Gea Logo">
             </div>
@@ -79,20 +81,21 @@
 
         <div id="form">
             <div id="form_content">
-                <p>Comunícate con nosotros</p>
-                <h2>Nos contactaremos a la brevedad</h2>
+                <h2>Comunícate con nosotros</h2>
+                <p>Nos contactaremos a la brevedad</p>
             </div>
             <div id="form_main">
                 <form method="post">
-                    <input type="text" id="f_name" placeholder="Nombre" name="nombre">
-                    <input type="text" id="l_name" placeholder="Apellido" name="apellido">
-                    <input type="text" id="f_phone" placeholder="Teléfono" name="telefono">
-                    <input type="text" id="f_email" placeholder="Email" name="email">
-                    <select id="dropdown" name="objetivo">
+                    <select id="dropdown" name="objetivo" required>
                         <option>Selecciona una opción >></option>
                         <option>Hablar con un médico</option>
                         <option>Comprar un producto</option>
                     </select>
+                    <input type="text" id="f_name" placeholder="Nombre" name="nombre" required>
+                    <input type="text" id="l_name" placeholder="Apellido" name="apellido" required>
+                    <input type="text" id="f_phone" placeholder="Celular" name="telefono" required>
+                    <input type="text" id="f_email" placeholder="Email" name="email" required>
+                    
                     <!-- <input type="text" id="f_comment" placeholder="Comentario" name="comentario"> -->
                     <input type="submit" value="Enviar">
                 </form>

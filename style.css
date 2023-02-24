@@ -9,14 +9,14 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@font-face {
+/* @font-face {
     font-family: 'buffaloregular';
     src: url('fonts/buffalo-regular-webfont.woff2') format('woff2'),
          url('fonts/buffalo-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
-}
+} */
 
 *{
     margin:0;
@@ -101,12 +101,14 @@ body{
 
 #atf #usp{
     color: var(--dark_green);
-    font-family: 'buffaloregular';
+    font-family: 'Roboto';
     font-weight: 100;
     letter-spacing: 5px;
     text-align: center;
     margin: 100px auto 0 auto;
     max-width: 800px;
+    position: relative;
+    z-index: 90;
 }
 
 #atf #usp h1 {
@@ -124,6 +126,8 @@ body{
     margin-top: -400px;
     text-align: center;
     text-transform: uppercase;
+    position: relative;
+    z-index: 99;
 }
 
 #atf #bienestar h3{
@@ -146,14 +150,7 @@ body{
     left: 0px;
 }
 
-#atf #flecha{
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 50px;
-    display: flex;
-    justify-content: center;
-}
+/*how to put an image in front of another element?  */
 
 /*BIENVENIDO*/
 
@@ -265,15 +262,17 @@ body{
 
 #formulario #form #form_content h2{
     color: var(--soft_orange);
-    font-family: 'buffaloregular';
+    font-family: 'Roboto';
     font-size: 60px;
     font-weight: 100;
     text-align: center;
+    text-transform: uppercase;
 }
 
 #formulario #form #form_content p{
     color: var(--soft_orange);
-    font-size: 50px;
+    font-size: 20px;
+    margin-top:20px;
     margin-bottom: 30px;
     text-align: center;
     text-transform: uppercase;
@@ -419,11 +418,11 @@ body{
 
 #historia #historia_2 #historia_titulo span{
     color: var(--dark_green);
-    font-family: 'buffaloregular';
-    font-size: 60px;
+    font-family: 'Roboto';
+    font-size: 40px;
     font-weight: 100;
     line-height: 40px;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 #historia #historia_2 #historia_content{
