@@ -45,10 +45,9 @@ body{
 
 /*ATF*/
 
-/*add a paralax effect to a background image*/
 #atf{
     background-attachment: fixed;
-    background-image: url(img/atf_bg.jpg);
+    background-image: url('img/atf_bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,7 +100,6 @@ body{
 
 #atf #usp{
     color: var(--dark_green);
-    font-family: 'Roboto';
     font-weight: 100;
     letter-spacing: 5px;
     text-align: center;
@@ -262,7 +260,6 @@ body{
 
 #formulario #form #form_content h2{
     color: var(--soft_orange);
-    font-family: 'Roboto';
     font-size: 60px;
     font-weight: 100;
     text-align: center;
@@ -418,7 +415,6 @@ body{
 
 #historia #historia_2 #historia_titulo span{
     color: var(--dark_green);
-    font-family: 'Roboto';
     font-size: 40px;
     font-weight: 100;
     line-height: 40px;
@@ -615,7 +611,7 @@ footer{
 
 /*Responsive para Mobile*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio:0){
     #atf {
         padding-top: 100px;
     }
@@ -672,7 +668,7 @@ footer{
         margin-top: 10px;
     }
     #atf #usp h1 {
-        font-size: 35px;
+        font-size: 22px;
         padding-top: 20px;
         padding-left: 20px;
         padding-right: 20px;
@@ -689,11 +685,17 @@ footer{
     }
     #formulario #form #form_content h2{
         font-size: 35px;
+        margin-bottom: 20px;
     }
     #formulario #form #form_content p{
-        font-size: 30px;
+        font-size: 20px;
         margin: 0 15px 10px 15px;
     }
+
+    #formulario #form #form_main{
+        max-width: 300px;
+    }
+
     #formulario #form #form_main form input[type=submit] {
         font-size: 15px;
         padding: 18px 35px;
@@ -725,3 +727,32 @@ footer{
         font-size: 13px;
     }
 }
+
+
+@media only screen and (max-width: 395px) and (-webkit-min-device-pixel-ratio:0){
+    #atf{
+        background-image: url(img/atf_bg_mobile.jpg);
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    #atf .cta{
+        font-size: 12px;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    #formulario{
+        background-attachment: scroll;
+    }
+}
+
+/* @media not all and (min-resolution:.001dpcm){ 
+    @supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
+        #atf{
+            background-image: url('img/atf_bg.jpg');
+            background-position: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+        }
+    }} */
