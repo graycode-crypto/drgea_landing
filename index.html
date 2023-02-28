@@ -85,11 +85,11 @@
                 <p>Nos contactaremos a la brevedad</p>
             </div>
             <div id="form_main">
-                <form method="post">
+                <form method="post" action="/save/post.php">
                     <select id="dropdown" name="objetivo" required>
-                        <option>Selecciona una opción >></option>
-                        <option>Hablar con un médico</option>
-                        <option>Comprar un producto</option>
+                        <option value="900">Selecciona una opción >></option>
+                        <option value="901">Hablar con un médico</option>
+                        <option value="902">Comprar un producto</option>
                     </select>
                     <input type="text" id="f_name" placeholder="Nombre" name="nombre" required>
                     <input type="text" id="l_name" placeholder="Apellido" name="apellido" required>
