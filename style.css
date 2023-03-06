@@ -89,11 +89,11 @@ body{
     background-color: transparent;
     border: 2px solid var(--dark_green);
     color: var(--dark_green);
-    display: block;
+    display: inline-block;
     font-size: 12px;
     margin-top: 5px;
     /*box-shadow: 0px 18px 35px rgba(0, 0, 0, 0.3);*/
-    padding: 18px 22px;
+    padding: 21px 22px;
     /* max-width: 200px;
     text-align: center; */
 }
@@ -206,7 +206,15 @@ body{
 
 #bienvenido #bienvenido_1 #bienvenido_cta{
     margin-left: 100px;
-    margin-top: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+#bienvenido #bienvenido_1 #bienvenido_cta a{
+    display: block;
+    max-width: 270px;
 }
 
 #bienvenido #bienvenido_1 #bienvenido_cta .cta{
@@ -444,12 +452,32 @@ footer{
 
 .cta{
     background-color: var(--dark_green);
+    border: solid 2px var(--dark_green);
     color: var(--soft_yellow);
     font-size: 13px;
     /* font-weight: bold; */
     padding: 20px 25px;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.wa-cta{
+    background-color: var(--soft_green);
+    border: solid 2px var(--dark_green);
+    color: var(--dark_green);
+    font-size: 13px;
+    padding: 20px 25px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.whatsapp-icon{
+    color: var(--dark_green);
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 15px;
 }
 
 /*Responsive para Notebook*/
@@ -503,20 +531,21 @@ footer{
     }
     #atf {
         background-position: center;
+        padding-bottom: 50px;
     }
     #atf #bienestar h2 {
         font-size: 80px;
         letter-spacing: 15px;
-        margin-top: -230px;
+        margin-top: -250px;
     }
     #atf #bienestar h3 {
-        margin-top: 80px;
+        margin-top: 120px;
         font-size: 120px;
         letter-spacing: 20px;
     }
     #atf #usp h1 {
         font-size: 40px;
-        padding-top: 10px;
+        padding-top: 0px;
         padding-left: 40px;
         padding-right: 40px;
         padding-bottom: 10px;
@@ -526,7 +555,7 @@ footer{
         /* bottom: 30%; */
         top: auto;
         right: 15px;
-        display: flex;
+        display: none;
         justify-content: center;
         z-index: 99;
     }
@@ -534,6 +563,21 @@ footer{
         font-size: 16px;
         letter-spacing: 2px;
         padding: 25px 25px;
+    }
+    #atf #arbol{
+        bottom: -50px;
+    }
+    #atf #mobile_cta{
+        display: block;
+        width: 300px;
+        margin: 20px auto 0 auto;
+    }
+    #atf #mobile_cta a{
+        display: block;
+        margin-bottom: 15px;
+    }
+    #atf #mobile_cta a.cta{
+        background-color: rgba(250, 250, 250, 0.6);
     }
     #bienvenido {
         flex-direction: column;
@@ -559,10 +603,15 @@ footer{
         max-width: 500px;
     }
     #bienvenido #bienvenido_1 #bienvenido_cta {
-        margin-left: 0px;
-        margin-top: 80px;
+        margin:80px auto 0px auto;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        max-width: 300px;
+
+    }
+    #bienvenido #bienvenido_1 #bienvenido_cta a{
+        display: block;
     }
     #bienvenido #bienvenido_2 {
         min-height: 80vh;
@@ -633,8 +682,16 @@ footer{
 
     #atf #mobile_cta .cta{
         background-color: var(--dark_green);
-        color: var(--soft_yellow);
+        border: solid 2px var(--dark_green);
+        color: var(--dark_green);
+        display: block;
         font-size: 15px;
+    }
+
+    #atf #mobile_cta .wa-cta{
+        display: block;
+        font-size: 15px;
+        margin-top: 10px;
     }
 
     #atf #bienestar {
@@ -679,9 +736,23 @@ footer{
         margin: 0px 0px 0px 0px;
         padding: 0px 40px;
     }
+    #bienvenido #bienvenido_1 #bienvenido_cta{
+        display: block;
+        flex-direction: column;
+        margin: 30px auto 0 auto;
+        max-width: 270px;
+    }
+
+    #bienvenido #bienvenido_1 #bienvenido_cta a{
+        display: block;
+        font-size: 15px;
+        text-align: center;
+        margin-top:10px;
+        padding: 20px 10px;
+    }
     #formulario{
         padding-top: 0px;
-        padding-bottom: 0px;
+        padding-bottom: 80px;
     }
     #formulario #form #form_content h2{
         font-size: 35px;
@@ -694,6 +765,7 @@ footer{
 
     #formulario #form #form_main{
         max-width: 300px;
+        margin:0 auto;
     }
 
     #formulario #form #form_main form input[type=submit] {
@@ -736,13 +808,41 @@ footer{
         background-attachment: scroll;
     }
     #atf .cta{
+        color: var(--dark_green);
         font-size: 12px;
         text-align: center;
         padding: 20px 10px;
     }
 
+    #atf .wa-cta{
+        font-size: 12px;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    #bienvenido #bienvenido_1 #bienvenido_cta{
+        display: block;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    #bienvenido #bienvenido_1 #bienvenido_cta a{
+        display: block;
+        font-size: 15px;
+        text-align: center;
+        margin-top:10px;
+        padding: 20px 10px;
+    }
+
     #formulario{
         background-attachment: scroll;
+        padding-bottom: 80px;
+    }
+    #formulario #form #form_main form input[type=submit] {
+        font-size: 15px!important;
+        padding: 18px 35px!important;
+        border-radius: 0!important;
     }
 }
 
