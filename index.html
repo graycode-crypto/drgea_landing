@@ -82,18 +82,19 @@
                 <h2>Hablar con un médico</h2>
                 <p>Nos contactaremos a la brevedad</p>
             </div>
+
             <div id="form_main">
-                <form method="post">
-                    <input type="text" id="f_name" placeholder="Nombre">
-                    <input type="text" id="f_phone" placeholder="Teléfono">
-                    <input type="text" id="f_email" placeholder="Email">
-                    <select id="dropdown">
-                        <option>Seleccionar >></option>
-                        <option>Hablar con un médico</option>
-                        <option>Comprar un producto</option>
-                    </select>
-                    <input type="text" id="f_comment" placeholder="Comentario">
-                    <input type="submit" value="Enviar">
+                <form id="myForm" method="post">
+                  <input type="text" id="f_name" placeholder="Nombre" required>
+                  <input type="number" id="f_phone" placeholder="Teléfono" required>
+                  <input type="email" id="f_email" placeholder="Email" required>
+                  <select id="dropdown" required>
+                    <option value="">Seleccionar >></option>
+                    <option value="medico">Hablar con un médico</option>
+                    <option value="producto">Comprar un producto</option>
+                  </select>
+                  <input type="text" id="f_comment" placeholder="Comentario">
+                  <button type="submit" value="Enviar">Enviar</button>
                 </form>
             </div>
 
@@ -133,6 +134,48 @@
     </div>
 
     <footer>Copyright © 2023 | Derechos Rervados a <strong>Dr. Gea</strong></footer>
+
+    <!--Validation Form-->
+    <script>
+        const myForm = document.getElementById("myForm");
+myForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+  if(validateForm()) {
+    myForm.submit();
+  } else {
+    alert("Por favor, rellena correctamente todos los campos requeridos.");
+  }
+});
+
+function validateForm() {
+  let valid = true;
+  const name = document.getElementById("f_name").value;
+  const phone = document.getElementById("f_phone").value;
+  const email = document.getElementById("f_email").value;
+  const dropdown = document.getElementById("dropdown").value;
+  const comment = document.getElementById("f_comment").value;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+  if (name === "") {
+    valid = false;
+  }
+  
+  if (phone === "") {
+    valid = false;
+  }
+  
+  if (email === "" || !emailRegex.test(email)) {
+    valid = false;
+  }
+  
+  if (dropdown === "") {
+    valid = false;
+  }
+  
+  return valid;
+}
+
+    </script>
 </body>
 
 </html>
