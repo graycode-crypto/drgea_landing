@@ -306,7 +306,7 @@ body{
     outline: none;
 }
 
-#formulario #form #form_main form input[type=text]{
+#formulario #form #form_main form input{
     background-color: transparent;
     border: none;
     border-bottom: var(--soft_orange) solid 1px;
@@ -344,7 +344,7 @@ body{
     border: none;
 }
 
-#formulario #form #form_main form input[type=submit]{
+#formulario #form #form_main form button{
     background-color: var(--green);
     border: none;
     color: white;
